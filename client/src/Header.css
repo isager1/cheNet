@@ -11,7 +11,7 @@ i {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background-color: blue;
+    background-color: rgb(32, 118, 216);
 }
 
 .headContent a {
@@ -21,11 +21,36 @@ i {
 .headInfo {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.headInfo span {
+    font-size: 1.8em;
+    margin: 10px;
 }
 
 .navHead {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 6px 0 rgb(163, 163, 163);
+    box-shadow: 0 1px 0 0 rgb(230, 230, 230);
+    margin: 10px;
+   
+}
+
+.navHead i {
+    color: black;
+    margin: 10px;
+}
+
+.headInfoIcons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    color: white;
+}
+
+.headInfoNav {
+    font-size: 0.8em;
+    margin-right: 15px;
 }

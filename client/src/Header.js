@@ -8,11 +8,16 @@ const Header = () => {
                 <div className="headContent">
                     <div className="headLogo">LOGO</div>
                     <div className="headInfo">
-                        <a href="#"><i><FaPhone /></i>0999 99 99</a>
+                        <a href="#"><i><FaPhone /></i><span>0999 99 99</span></a>
                         <div className="headInfoIcons">
-                            <a href="#"><i><FaEnvelope /></i></a>
-                            <a href="#"><i><FaMapMarker /></i></a>
-                            <a href="#"><i><FaSuitcase /></i></a>
+                            <i><FaEnvelope /></i>
+                            <i><FaSuitcase /></i>
+                            <i><FaMapMarker /></i>
+                        </div>
+                        <div className='headInfoNav'>
+                            <a href="#">Newlesster</a>
+                            <a href="#">Suivi de commande</a>
+                            <a href="#">Agences</a>
                         </div>
                     </div>
                 </div>
