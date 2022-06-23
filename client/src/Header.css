@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Georama:wght@500&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
 a {
     text-decoration: none;
     margin: 10px;
@@ -9,7 +15,7 @@ i {
 
 .headContent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     background-color: rgb(32, 118, 216);
 }
@@ -29,18 +35,39 @@ i {
     margin: 10px;
 }
 
+.headLogo {
+    margin-left: 100px;
+}
+
 .navHead {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 0 0 rgb(230, 230, 230);
     margin: 10px;
-   
+}
+
+.navHeadMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.navHeadMenu a {
+    color: black;
+    padding: 20px;
+    margin-top: -5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.navHeadMenu a:hover {
+    background-color:rgb(32, 118, 216);
+    border-top: 2px solid rgb(255, 255, 255);
+    color: white;
 }
 
 .navHead i {
     color: black;
-    margin: 10px;
 }
 
 .headInfoIcons {

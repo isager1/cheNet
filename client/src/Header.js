@@ -6,7 +6,7 @@ const Header = () => {
         <div>
             <div className="headContainer">
                 <div className="headContent">
-                    <div className="headLogo">LOGO</div>
+                    <div className="headLogo"><img src="./logo.png" alt="logo" /></div>
                     <div className="headInfo">
                         <a href="#"><i><FaPhone /></i><span>0999 99 99</span></a>
                         <div className="headInfoIcons">
@@ -23,12 +23,14 @@ const Header = () => {
                 </div>
                 <div className="navHead">
                     <a href="/"><i><FaHome /></i></a>
+                <div className="navHeadMenu">
                     <a href="#">BONS PLANS</a>
                     <a href="#">SEJOURS</a>
                     <a href="#">LOCATION</a>
                     <a href="#">CAMPING</a>
                     <a href="#">HOTEL</a>
                     <a href="#">VOL</a>
+                </div>
                 </div>
             </div>
 
