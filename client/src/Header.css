@@ -62,7 +62,6 @@ i {
 
 .navHeadMenu a:hover {
     background-color:rgb(32, 118, 216);
-    border-top: 2px solid rgb(255, 255, 255);
     color: white;
 }
 
