@@ -1,28 +1,9 @@
 import './BodyUp.css'
 import { FaHome, FaPhone, FaEnvelope, FaMapMarker, FaSuitcase, FaSearch } from 'react-icons/fa';
 import Select from 'react-select';
+import React, { useState } from 'react';
 
-const villes = [
-    { label: "Paris", value: 1 },
-    { label: "Strasbourg", value: 2 },
-    { label: "Bruxelles", value: 3 },
-    { label: "Lille", value: 4 },
-    { label: "Metz", value: 5 },
-    { label: "Nice", value: 6 },
-    { label: "Nantes", value: 7 },
-    { label: "Toulouse", value: 8 },
-    { label: "Bordeaux", value: 9 },
-    { label: "Barcelone", value: 10 },
-    { label: "Rome", value: 11 },
-];
 
-const temps = [
-    { label: "Peu m'importe", value: 1 },
-    { label: "Week-end (jusqu'a 5 jours)", value: 2 },
-    { label: "1 semaine (6 a 11 jours)", value: 3 },
-    { label: "2 semaine (12 a 19 jours)", value: 4 },
-    { label: "Sejour long (20 jours et plus)", value: 5 },
-]
 
 // const types = [
 //     { label: "Sejours tout compris", value: 1 },
@@ -31,22 +12,57 @@ const temps = [
 //     { label: "Hotels Clubs", value: 4 },
 // ]
 
+const villes = [
+    { value: 'Paris', label: 'Paris' },
+    { value: 'Strasbourg', label: 'Strasbourg' },
+    { value: 'Bruxelles', label: 'Bruxelles' },
+    { value: 'Lille', label: 'Lille' },
+    { value: 'Metz', label: 'Metz' },
+    { value: 'Nice', label: 'Nice' },
+    { value: 'Nantes', label: 'Nantes' },
+    { value: 'Toulouse', label: 'Toulouse' },
+    { value: 'Bordeaux', label: 'Bordeaux' },
+    { value: 'Barcelone', label: 'Barcelone' },
+    { value: 'Rome', label: 'Rome' },
+  ];
+
+  const temps = [
+    { value: "Peu m'importe", label: "Peu m'importe" },
+    { value: "Week-end (jusqu'a 5 jours)", label: "Week-end" },
+    { value: "1 semaine (6 a 11 jours)", label: "1 semaine" },
+    { value: "2 semaine (12 a 19 jours)", label: "2 semaine" },
+    { value: "Sejour long (20 jours et plus)", label: "Sejour long" },
+  ];
+  
+
 const BodyUp = () => {
+
+    const [selectedVilles, setSelectedVilles] = useState(villes[1]);
+    const [selectedTemps, setSelectedTemps] = useState(temps[0]);
+
+
+
     return (
         <div>
             <div className="bodyContainer">
                 <div className="searchCont">
                     <form id="search">
-                        {/* <a href="#">Voyage</a>
+                        <a href="#">Voyage</a>
                         <a href="#">Vol</a>
                         <a href="#">Circuits</a>
                         <a href="#">France</a>
                         <a href="#">Croisiere</a>
-                        <a href="#">Hotel</a> */}
+                        <a href="#">Hotel</a>
                         <FaSearch className="loupe" /><input type="text" name="search" />
-                        <Select options={villes} />
+                        <Select
+                             defaultValue={selectedVilles}
+                             onChange={setSelectedVilles}
+                             options={villes}/>
                         <input type="date" />
-                        <Select options={temps} />
+                        <Select
+                             defaultValue={selectedTemps}
+                             onChange={setSelectedTemps}
+                             options={temps}/>
                         <button type="submit">Rechercher</button>
                     </form>
                 </div>
