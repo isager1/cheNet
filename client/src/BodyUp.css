@@ -1,6 +1,9 @@
+@import "react-slideshow-image/dist/styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Georama:wght@500&display=swap');
+
+
 .bodyContainer {
     background: url('../public/sky.jpg');
-    height: 600px;
     opacity: 0.7;
 }
 
@@ -82,3 +85,28 @@ button:hover {
 .control {
     background-color: red;
 }
+
+.slideCont {
+    width: 900px;
+    margin-left: 410px;
+    margin-top: -80px;
+    padding: 10px;
+}
+
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+    background: no-repeat;
+    border-radius: 10px;
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }

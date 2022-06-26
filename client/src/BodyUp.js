@@ -2,8 +2,21 @@ import './BodyUp.css'
 import { FaHome, FaPhone, FaEnvelope, FaMapMarker, FaSuitcase, FaSearch } from 'react-icons/fa';
 import Select from 'react-select';
 import React, { useState } from 'react';
+import { Slide } from 'react-slideshow-image';
 
 
+
+const slideImages = [
+    {
+      url: 'france.jpg', 
+    },
+    {
+      url: 'offert.jpg',
+    },
+    {
+      url: 'hotel.jpg',
+    },
+  ];
 
 // const types = [
 //     { label: "Sejours tout compris", value: 1 },
@@ -68,11 +81,23 @@ const BodyUp = () => {
                              options={temps}/>
                         <button type="submit">Rechercher</button>
                     </form>
+
                 </div>
-               
+        
                 </div>
-            </div>
-        </div>
+                <div className='slideCont'>
+                    <Slide>
+                        {slideImages.map((slideImage, index)=> (
+                        <div className="each-slide" key={index}>
+                        <div style={{'backgroundImage': `url(${slideImage.url})`}}>
+                        </div>
+                        </div>
+                    ))} 
+                    </Slide>
+                </div>
+         </div>
+    </div>
+       
     );
 }
 
