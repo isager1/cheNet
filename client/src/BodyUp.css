@@ -24,15 +24,23 @@
 }
 
 .searchNav a {
-    color: white;
-    padding: 10px;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    font-weight: 700;
+    font-size: 0.8em;
+    background-color:hsla(0,0%,60%,.25);
+    border-radius: 6px;
 }
 
 .searchNav a:focus {
     background-color: orangered;
     border-radius: 6px;
-    padding: 10px;
-    box-shadow: 0 3px 6px 0 gray;
+    padding: 6px;
+   
+}
+
+.searchNav a:active {
+    background-color: orangered;
 }
 
 form {
