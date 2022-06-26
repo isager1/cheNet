@@ -46,13 +46,16 @@ const BodyUp = () => {
         <div>
             <div className="bodyContainer">
                 <div className="searchCont">
-                    <form id="search">
+                <div className='searchForm'>
+                <div className='searchNav'>
                         <a href="#">Voyage</a>
                         <a href="#">Vol</a>
                         <a href="#">Circuits</a>
                         <a href="#">France</a>
                         <a href="#">Croisiere</a>
                         <a href="#">Hotel</a>
+                        </div>
+                    <form id="search">
                         <FaSearch className="loupe" /><input type="text" name="search" />
                         <Select
                              defaultValue={selectedVilles}
@@ -65,6 +68,8 @@ const BodyUp = () => {
                              options={temps}/>
                         <button type="submit">Rechercher</button>
                     </form>
+                </div>
+               
                 </div>
             </div>
         </div>

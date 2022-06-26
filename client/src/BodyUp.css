@@ -6,18 +6,38 @@
 
 .searchCont {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-form {
-    display: flex;
-    align-items: center;
+.searchForm {
     margin: 10vh;
     padding: 40px;
     border: 1px solid white;
     background-color: rgba(22, 92, 109, 0.5);
     border-radius: 6px;
     box-shadow: 0 1px 2px 0 inset rgb(0, 0, 0);
+}
+
+.searchNav {
+    display: flex;
+}
+
+.searchNav a {
+    color: white;
+    padding: 10px;
+}
+
+.searchNav a:focus {
+    background-color: orangered;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 3px 6px 0 gray;
+}
+
+form {
+    display: flex;
+    align-items: center;
 }
 
 input {
